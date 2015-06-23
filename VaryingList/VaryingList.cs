@@ -35,6 +35,13 @@ namespace Nordeus.DataStructures
 	/// </remarks>
 	/// <remarks>
 	/// Note: This class is NOT thread-safe!
+	/// example usage:
+	///	verts.AsArrayOfLength(verts.size, (buffer) =>
+	///	{
+	///		mesh.vertices = buffer;
+	///	});
+	/// </remarks>
+	/// <remarks>
 	/// </remarks>
 	public abstract class VaryingList<T> : BufferedList<T>
 	{
